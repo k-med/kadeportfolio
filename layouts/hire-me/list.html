@@ -1,0 +1,118 @@
+{{/*
+Hire Me / Recruiter Pack Layout
+CSS is included globally via extend_head.html
+*/}}
+{{ define "main" }}
+
+<article class="recruiter-pack">
+
+    <header>
+        <h1>Hire Me</h1>
+    </header>
+
+    {{/* Summary */}}
+    <p class="recruiter-summary">
+        English-first Technical Support and Field Service professional with hands-on experience in troubleshooting,
+        installation, commissioning, and customer-facing support.
+        I'm relocating to Prague/Brno and seeking roles where I can apply my diagnostic skills and clear communication
+        to help technical teams succeed.
+    </p>
+
+    {{/* Download Buttons */}}
+    <div class="download-buttons">
+        {{/* TODO: PDFs not yet uploaded — update when ready */}}
+        <a href="/files/KadeMedley_CV_TechSupport_FieldService_PragueBrno.pdf" class="btn btn-primary" download>
+            📄 Download CV (PDF)
+        </a>
+        <a href="/files/KadeMedley_TechnicalProfile_1Page.pdf" class="btn btn-primary" download>
+            📋 Download Technical Profile (PDF)
+        </a>
+    </div>
+
+    {{/* Work Authorization */}}
+    <p class="work-auth-notice">
+        Non-EU citizen — will require Employment Card sponsorship. Ready to proceed quickly with documentation.
+    </p>
+
+    {{/* Role Targets */}}
+    <section class="recruiter-section">
+        <h2>Role Targets</h2>
+        <ul class="role-targets">
+            <li>Technical Support Specialist</li>
+            <li>Application Support Specialist (hardware/systems)</li>
+            <li>Customer Support Engineer</li>
+            <li>Field Service Technician / Service Technician</li>
+        </ul>
+    </section>
+
+    {{/* Keywords */}}
+    <section class="recruiter-section">
+        <h2>Keywords</h2>
+        <p style="font-size: 0.9rem; color: var(--secondary); margin-bottom: 1rem;">
+            For ATS and search relevance:
+        </p>
+        <div class="keywords-list">
+            <span class="keyword-tag">troubleshooting</span>
+            <span class="keyword-tag">diagnostics</span>
+            <span class="keyword-tag">fault finding</span>
+            <span class="keyword-tag">electronics</span>
+            <span class="keyword-tag">installation</span>
+            <span class="keyword-tag">commissioning</span>
+            <span class="keyword-tag">testing</span>
+            <span class="keyword-tag">verification</span>
+            <span class="keyword-tag">customer support</span>
+            <span class="keyword-tag">field service</span>
+            <span class="keyword-tag">equipment systems</span>
+            <span class="keyword-tag">communications systems</span>
+            <span class="keyword-tag">ticketing workflows</span>
+        </div>
+    </section>
+
+    {{/* 60-Day Plan */}}
+    <section class="recruiter-section">
+        <h2>60-Day Ramp-Up Plan</h2>
+        <div class="ramp-plan">
+            <h3>Days 1–14: Foundation</h3>
+            <ul>
+                <li>Learn internal systems, tools, and ticketing workflows</li>
+                <li>Shadow experienced team members on support cases</li>
+                <li>Complete product/service documentation review</li>
+            </ul>
+
+            <h3>Days 15–30: Contributing</h3>
+            <ul>
+                <li>Handle Tier 1 support cases independently</li>
+                <li>Participate in on-site installations or field visits</li>
+                <li>Begin documenting common issues and solutions</li>
+            </ul>
+
+            <h3>Days 31–60: Delivering</h3>
+            <ul>
+                <li>Take ownership of escalated cases</li>
+                <li>Lead customer-facing troubleshooting sessions</li>
+                <li>Contribute to team knowledge base and process improvements</li>
+            </ul>
+        </div>
+    </section>
+
+    {{/* Call to Action */}}
+    <section class="recruiter-section text-center">
+        <h2>Ready to Talk?</h2>
+        <div class="hero-ctas" style="margin-top: 1rem;">
+            <a href="mailto:kade@kademedley.com" class="btn btn-secondary">
+                ✉️ Email Me
+            </a>
+            <a href="https://www.linkedin.com/in/kademedley/" class="btn btn-secondary" target="_blank" rel="noopener">
+                💼 Connect on LinkedIn
+            </a>
+            {{/* TODO: Add Calendly button here when ready
+            <a href="https://calendly.com/kademedley" class="btn btn-primary" target="_blank" rel="noopener">
+                📅 Book a Call
+            </a>
+            */}}
+        </div>
+    </section>
+
+</article>
+
+{{ end }}

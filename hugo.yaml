@@ -1,4 +1,129 @@
-baseURL: "https://example.org/"
+baseURL: "https://kademedley.com/"
 languageCode: "en-us"
-title: "My New Site"
+title: "Kade Medley — Technical Support & Field Service"
 theme: "PaperMod"
+
+# Build settings
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+minify: true
+
+# Pagination
+pagination:
+  pagerSize: 10
+
+# Menu
+menu:
+  main:
+    - identifier: home
+      name: Home
+      url: /
+      weight: 10
+    - identifier: hire-me
+      name: Hire Me
+      url: /hire-me/
+      weight: 20
+    - identifier: projects
+      name: Projects
+      url: /projects/
+      weight: 30
+    - identifier: about
+      name: About
+      url: /about/
+      weight: 40
+    - identifier: contact
+      name: Contact
+      url: /contact/
+      weight: 50
+
+params:
+  # Site metadata
+  env: production
+  author: Kade Medley
+  description: "English-first Technical Support & Field Service professional seeking roles in Prague/Brno. Customer-facing troubleshooting, installation, commissioning, and diagnostics."
+  keywords:
+    - technical support
+    - field service
+    - troubleshooting
+    - diagnostics
+    - installation
+    - commissioning
+    - Prague
+    - Brno
+    - English speaker
+
+  # Theme settings
+  defaultTheme: auto
+  disableThemeToggle: false
+  ShowReadingTime: false
+  ShowShareButtons: false
+  ShowPostNavLinks: false
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: false
+  ShowWordCount: false
+  ShowRssButtonInSectionTermList: false
+  UseHugoToc: true
+  disableSpecial1stPost: true
+  disableScrollToTop: false
+  hidemeta: true
+  hideSummary: false
+
+  # Home page info mode
+  homeInfoParams:
+    Title: "English-first Technical Support / Field Service — Prague/Brno"
+    Content: |
+      Customer-facing troubleshooting, installation & commissioning support, electronics & equipment systems.
+
+      **Non-EU citizen** — will require Employment Card sponsorship. Ready to proceed quickly with documentation.
+
+  # Social icons (shown on home)
+  socialIcons:
+    - name: email
+      url: "mailto:kade@kademedley.com"
+    - name: linkedin
+      url: "https://www.linkedin.com/in/kademedley/"
+    # TODO: Add Calendly link here when ready
+    # - name: calendar
+    #   url: "https://calendly.com/kademedley"
+
+  # Cover image defaults
+  cover:
+    hidden: true
+    hiddenInList: true
+    hiddenInSingle: true
+
+  # SEO / OpenGraph
+  assets:
+    favicon: "/favicon.svg"
+    # TODO: Add PNG favicons when ready for better compatibility
+    # favicon16x16: "/favicon-16x16.png"
+    # favicon32x32: "/favicon-32x32.png"
+    # apple_touch_icon: "/apple-touch-icon.png"
+    disableFingerprinting: false
+
+  # OpenGraph / Twitter cards
+  images:
+    - /images/og-image.png
+
+  # Label (site branding)
+  label:
+    text: "Kade Medley"
+    # icon: /favicon.ico
+    iconHeight: 35
+
+# Outputs
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+# Markup settings
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    noClasses: false

@@ -1,0 +1,581 @@
+/* ==========================================================================
+   kademedley.com — Custom Styles
+   Minimal additions on top of PaperMod theme
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   CSS Custom Properties (Design Tokens)
+   -------------------------------------------------------------------------- */
+:root {
+  --accent-color: #2563eb;
+  --accent-hover: #1d4ed8;
+  --pill-bg: rgba(37, 99, 235, 0.1);
+  --pill-text: #2563eb;
+  --pill-border: #2563eb;
+  --card-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  --card-shadow-hover: 0 4px 12px rgba(0, 0, 0, 0.15);
+  --section-spacing: 4rem;
+  --grid-gap: 1.5rem;
+}
+
+[data-theme="dark"] {
+  --accent-color: #60a5fa;
+  --accent-hover: #93c5fd;
+  --pill-bg: rgba(96, 165, 250, 0.15);
+  --pill-text: #60a5fa;
+  --pill-border: #60a5fa;
+  --card-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  --card-shadow-hover: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* --------------------------------------------------------------------------
+   Hero Section
+   -------------------------------------------------------------------------- */
+.hero-section {
+  text-align: center;
+  padding: 2rem 0 3rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero-headline {
+  font-size: clamp(1.5rem, 4vw, 2.25rem);
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  color: var(--primary);
+}
+
+.hero-subheadline {
+  font-size: 1.1rem;
+  color: var(--secondary);
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+}
+
+/* Pill badges */
+.hero-pills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+}
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.375rem 0.875rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  background: var(--pill-bg);
+  color: var(--pill-text);
+  border: 1px solid var(--pill-border);
+  border-radius: 999px;
+}
+
+/* CTA Buttons */
+.hero-ctas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  border: none;
+}
+
+.btn-primary {
+  background: var(--accent-color);
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background: var(--accent-hover);
+  transform: translateY(-1px);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--accent-color);
+  border: 2px solid var(--accent-color);
+}
+
+.btn-secondary:hover {
+  background: var(--pill-bg);
+}
+
+.hero-secondary-cta {
+  margin-top: 0.5rem;
+}
+
+.hero-secondary-cta a {
+  color: var(--secondary);
+  text-decoration: underline;
+  font-size: 0.95rem;
+}
+
+.hero-secondary-cta a:hover {
+  color: var(--accent-color);
+}
+
+/* Work authorization notice */
+.work-auth-notice {
+  font-size: 0.85rem;
+  color: var(--secondary);
+  margin-top: 1.5rem;
+  padding: 0.75rem 1rem;
+  background: var(--code-bg);
+  border-radius: 6px;
+  display: inline-block;
+}
+
+/* --------------------------------------------------------------------------
+   Section Styling
+   -------------------------------------------------------------------------- */
+.home-section {
+  padding: var(--section-spacing) 0;
+  border-top: 1px solid var(--border);
+}
+
+.section-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: var(--primary);
+}
+
+/* --------------------------------------------------------------------------
+   "What I Do" — 3-column grid
+   -------------------------------------------------------------------------- */
+.what-i-do-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--grid-gap);
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.what-i-do-card {
+  text-align: center;
+  padding: 1.5rem;
+  background: var(--entry);
+  border-radius: 10px;
+  box-shadow: var(--card-shadow);
+  transition: box-shadow 0.2s ease;
+}
+
+.what-i-do-card:hover {
+  box-shadow: var(--card-shadow-hover);
+}
+
+.what-i-do-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  color: var(--primary);
+}
+
+.what-i-do-card p {
+  font-size: 0.9rem;
+  color: var(--secondary);
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* Icon placeholder */
+.what-i-do-icon {
+  font-size: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+/* --------------------------------------------------------------------------
+   Experience Timeline
+   -------------------------------------------------------------------------- */
+.experience-list {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.experience-item {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 2rem;
+  border-left: 2px solid var(--accent-color);
+}
+
+.experience-item::before {
+  content: "";
+  position: absolute;
+  left: -6px;
+  top: 0.25rem;
+  width: 10px;
+  height: 10px;
+  background: var(--accent-color);
+  border-radius: 50%;
+}
+
+.experience-item h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+  color: var(--primary);
+}
+
+.experience-item .company {
+  font-size: 0.95rem;
+  color: var(--accent-color);
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.experience-item ul {
+  margin: 0;
+  padding-left: 1.25rem;
+  list-style: disc;
+}
+
+.experience-item li {
+  font-size: 0.9rem;
+  color: var(--secondary);
+  margin-bottom: 0.25rem;
+  line-height: 1.4;
+}
+
+/* --------------------------------------------------------------------------
+   Project Cards
+   -------------------------------------------------------------------------- */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--grid-gap);
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.project-card {
+  background: var(--entry);
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: var(--card-shadow);
+  transition: all 0.2s ease;
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.project-card:hover {
+  box-shadow: var(--card-shadow-hover);
+  transform: translateY(-2px);
+}
+
+.project-card h3 {
+  font-size: 1.15rem;
+  margin-bottom: 0.5rem;
+  color: var(--primary);
+}
+
+.project-card p {
+  font-size: 0.9rem;
+  color: var(--secondary);
+  margin: 0;
+  line-height: 1.5;
+}
+
+.project-card .tech-tags {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tech-tag {
+  font-size: 0.75rem;
+  padding: 0.25rem 0.5rem;
+  background: var(--code-bg);
+  border-radius: 4px;
+  color: var(--secondary);
+}
+
+.card-link {
+  display: block;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: var(--accent-color);
+  font-weight: 500;
+}
+
+/* --------------------------------------------------------------------------
+   Contact Section
+   -------------------------------------------------------------------------- */
+.contact-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+  color: var(--accent-color);
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  transition: background 0.2s ease;
+}
+
+.contact-link:hover {
+  background: var(--pill-bg);
+}
+
+.contact-location {
+  text-align: center;
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+  color: var(--secondary);
+}
+
+/* --------------------------------------------------------------------------
+   Hire Me Page — Recruiter Pack
+   -------------------------------------------------------------------------- */
+.recruiter-pack {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.recruiter-summary {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  color: var(--secondary);
+}
+
+.download-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+.recruiter-section {
+  margin-bottom: 2.5rem;
+}
+
+.recruiter-section h2 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  color: var(--primary);
+  border-bottom: 2px solid var(--accent-color);
+  padding-bottom: 0.5rem;
+}
+
+.role-targets {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.role-targets li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid var(--border);
+  color: var(--primary);
+}
+
+.role-targets li:last-child {
+  border-bottom: none;
+}
+
+.keywords-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.keyword-tag {
+  display: inline-block;
+  font-size: 0.85rem;
+  padding: 0.375rem 0.75rem;
+  background: var(--code-bg);
+  border-radius: 6px;
+  color: var(--secondary);
+}
+
+.ramp-plan {
+  background: var(--entry);
+  padding: 1.5rem;
+  border-radius: 10px;
+}
+
+.ramp-plan h3 {
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+  color: var(--primary);
+}
+
+.ramp-plan ul {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+.ramp-plan li {
+  font-size: 0.9rem;
+  color: var(--secondary);
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
+}
+
+/* --------------------------------------------------------------------------
+   Project Detail Page
+   -------------------------------------------------------------------------- */
+.project-detail {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.project-detail h2 {
+  font-size: 1.25rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: var(--primary);
+}
+
+.project-detail p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--secondary);
+  margin-bottom: 1rem;
+}
+
+.project-detail ul {
+  padding-left: 1.25rem;
+}
+
+.project-detail li {
+  font-size: 0.95rem;
+  color: var(--secondary);
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+
+.project-links {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/* --------------------------------------------------------------------------
+   About Page
+   -------------------------------------------------------------------------- */
+.about-content {
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+.about-content p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--secondary);
+  margin-bottom: 1.25rem;
+}
+
+.values-list {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+}
+
+.value-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.95rem;
+  color: var(--primary);
+  font-weight: 500;
+}
+
+/* --------------------------------------------------------------------------
+   Utility Classes
+   -------------------------------------------------------------------------- */
+.text-center {
+  text-align: center;
+}
+
+.mt-2 {
+  margin-top: 2rem;
+}
+
+.mb-2 {
+  margin-bottom: 2rem;
+}
+
+/* --------------------------------------------------------------------------
+   Mobile Responsiveness
+   -------------------------------------------------------------------------- */
+@media (max-width: 640px) {
+  .hero-section {
+    padding: 1.5rem 0 2rem;
+  }
+
+  .hero-headline {
+    font-size: 1.5rem;
+  }
+
+  .hero-subheadline {
+    font-size: 1rem;
+  }
+
+  .hero-ctas {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn {
+    width: 100%;
+    max-width: 280px;
+  }
+
+  .home-section {
+    padding: 3rem 0;
+  }
+
+  .section-title {
+    font-size: 1.25rem;
+  }
+
+  .what-i-do-grid,
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .download-buttons {
+    flex-direction: column;
+  }
+
+  .experience-item {
+    padding-left: 1rem;
+  }
+}

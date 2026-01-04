@@ -1,0 +1,5 @@
+{{/* Extend head to include custom CSS on all pages */}}
+{{ $css := resources.Get "css/custom.css" }}
+{{ if $css }}
+<style>{{ $css.Content | safeCSS }}</style>
+{{ end }}

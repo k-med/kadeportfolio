@@ -1,0 +1,166 @@
+{{/*
+Custom Home Page Layout
+Extends PaperMod with conversion-focused hero and sections
+CSS is included globally via extend_head.html
+*/}}
+{{ define "main" }}
+
+{{/* ========== HERO SECTION ========== */}}
+<section class="hero-section">
+  <h1 class="hero-headline">English-first Technical Support / Field Service — Prague/Brno</h1>
+
+
+  <p class="hero-subheadline">
+    Customer-facing troubleshooting, installation & commissioning support, electronics & equipment systems.
+  </p>
+
+  {{/* Pill Badges */}}
+  <div class="hero-pills">
+    <span class="pill">English Native</span>
+    <span class="pill">Prague / Brno</span>
+    <span class="pill">Available Now</span>
+  </div>
+
+  {{/* Primary CTAs */}}
+  <div class="hero-ctas">
+    {{/* TODO: PDFs not yet uploaded — these link to /hire-me/ as fallback */}}
+    <a href="/files/KadeMedley_CV_TechSupport_FieldService_PragueBrno.pdf" class="btn btn-primary" download>
+      📄 Download CV
+    </a>
+    <a href="/files/KadeMedley_TechnicalProfile_1Page.pdf" class="btn btn-primary" download>
+      📋 Download Technical Profile
+    </a>
+  </div>
+
+  {{/* Secondary CTA */}}
+  <div class="hero-secondary-cta">
+    <a href="/contact/">Contact →</a>
+  </div>
+
+  {{/* Work Authorization Notice */}}
+  <p class="work-auth-notice">
+    Non-EU citizen — will require Employment Card sponsorship. Ready to proceed quickly with documentation.
+  </p>
+</section>
+
+{{/* ========== WHAT I DO ========== */}}
+<section class="home-section">
+  <h2 class="section-title">What I Do</h2>
+  <div class="what-i-do-grid">
+    <div class="what-i-do-card">
+      <div class="what-i-do-icon">🔧</div>
+      <h3>Troubleshooting & Diagnostics</h3>
+      <p>Systematic fault-finding on electronics, equipment, and communication systems.</p>
+    </div>
+    <div class="what-i-do-card">
+      <div class="what-i-do-icon">⚙️</div>
+      <h3>Installation & Commissioning</h3>
+      <p>On-site setup, testing, verification, and handover of technical systems.</p>
+    </div>
+    <div class="what-i-do-card">
+      <div class="what-i-do-icon">🎧</div>
+      <h3>Customer-facing Support</h3>
+      <p>Clear communication with clients, documentation, and escalation management.</p>
+    </div>
+  </div>
+</section>
+
+{{/* ========== RELEVANT EXPERIENCE ========== */}}
+<section class="home-section">
+  <h2 class="section-title">Relevant Experience</h2>
+  <div class="experience-list">
+
+    <div class="experience-item">
+      <h3>Field Service Technician</h3>
+      <div class="company">ITW — Fabrication & Equipment Systems</div>
+      <ul>
+        <li>Fault finding and diagnostics on fabrication equipment</li>
+        <li>Installation, commissioning, and customer training</li>
+        <li>Field repairs and preventive maintenance</li>
+      </ul>
+    </div>
+
+    <div class="experience-item">
+      <h3>Technical Support Specialist</h3>
+      <div class="company">SmartTech</div>
+      <ul>
+        <li>Remote and on-site troubleshooting</li>
+        <li>Customer-facing support via phone, email, ticketing</li>
+        <li>Documentation and knowledge base contributions</li>
+      </ul>
+    </div>
+
+    <div class="experience-item">
+      <h3>Technical Support / Systems Technician</h3>
+      <div class="company">CSE Crosscom — Motorola Solutions Partner</div>
+      <ul>
+        <li>Communications systems installation and testing</li>
+        <li>Verification and commissioning documentation</li>
+        <li>Technical support for enterprise radio systems</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+{{/* ========== PROOF / PROJECTS ========== */}}
+<section class="home-section">
+  <h2 class="section-title">Proof / Projects</h2>
+  <div class="projects-grid">
+
+    <a href="/projects/utteron/" class="project-card">
+      <h3>UtterOn</h3>
+      <p>Language learning platform — product design, UX, and documentation.</p>
+      <div class="tech-tags">
+        <span class="tech-tag">Hugo</span>
+        <span class="tech-tag">JavaScript</span>
+        <span class="tech-tag">Product Design</span>
+      </div>
+      <span class="card-link">Read more →</span>
+    </a>
+
+    <a href="/projects/data-analytics/" class="project-card">
+      <h3>Data & Analytics</h3>
+      <p>Reporting dashboards and data pipelines for structured problem-solving.</p>
+      <div class="tech-tags">
+        <span class="tech-tag">Power BI</span>
+        <span class="tech-tag">SQL</span>
+        <span class="tech-tag">Data Analysis</span>
+      </div>
+      <span class="card-link">Read more →</span>
+    </a>
+
+    <a href="/projects/calcfoundry/" class="project-card">
+      <h3>CalcFoundry</h3>
+      <p>Engineering calculation tools — precision and documentation.</p>
+      <div class="tech-tags">
+        <span class="tech-tag">Python</span>
+        <span class="tech-tag">Engineering</span>
+        <span class="tech-tag">Tooling</span>
+      </div>
+      <span class="card-link">Read more →</span>
+    </a>
+
+  </div>
+</section>
+
+{{/* ========== CONTACT ========== */}}
+<section class="home-section">
+  <h2 class="section-title">Contact</h2>
+  <div class="contact-links">
+    <a href="mailto:kade@kademedley.com" class="contact-link">
+      ✉️ kade@kademedley.com
+    </a>
+    <a href="https://www.linkedin.com/in/kademedley/" class="contact-link" target="_blank" rel="noopener">
+      💼 LinkedIn
+    </a>
+    {{/* TODO: Add Calendly link here when ready
+    <a href="https://calendly.com/kademedley" class="contact-link" target="_blank" rel="noopener">
+      📅 Book a Call
+    </a>
+    */}}
+  </div>
+  <p class="contact-location">📍 Relocating to Prague/Brno</p>
+</section>
+
+{{ end }}
