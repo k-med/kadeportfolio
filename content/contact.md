@@ -10,11 +10,14 @@ description: "Get in touch — email or LinkedIn."
 I'm actively looking for Technical Support and Field Service roles in Prague/Brno. The fastest way to reach me:
 
 <div class="contact-links" style="margin-top: 2rem; margin-bottom: 2rem;">
-  <a href="mailto:kade@kademedley.com" class="contact-link">
-    ✉️ kade@kademedley.com
-  </a>
+  <div class="copy-email-wrapper">
+    <a href="mailto:kade@kademedley.com" class="contact-link">
+      ✉️ kade@kademedley.com
+    </a>
+    <button class="copy-btn" onclick="navigator.clipboard.writeText('kade@kademedley.com').then(() => { this.textContent = '✓ Copied'; this.classList.add('copied'); setTimeout(() => { this.textContent = 'Copy'; this.classList.remove('copied'); }, 2000); })">Copy</button>
+  </div>
   <a href="https://www.linkedin.com/in/kademedley/" class="contact-link" target="_blank" rel="noopener">
-    💼 LinkedIn
+    💼 LinkedIn Profile
   </a>
 </div>
 

@@ -18,17 +18,19 @@ CSS is included globally via extend_head.html
   <div class="hero-pills">
     <span class="pill">English Native</span>
     <span class="pill">Prague / Brno</span>
-    <span class="pill">Available Now</span>
+    <span class="pill">Available</span>
   </div>
 
   {{/* Primary CTAs */}}
   <div class="hero-ctas">
-    {{/* TODO: PDFs not yet uploaded — these link to /hire-me/ as fallback */}}
-    <a href="/files/KadeMedley_CV_TechSupport_FieldService_PragueBrno.pdf" class="btn btn-primary" download>
+    <a href="/files/KadeMedley_CV_TechSupport_FieldService_PragueBrno.pdf" class="btn btn-primary" target="_blank"
+      rel="noopener">
       📄 Download CV
+      <span class="file-hint">PDF • 2 pages</span>
     </a>
-    <a href="/files/KadeMedley_TechnicalProfile_1Page.pdf" class="btn btn-primary" download>
-      📋 Download Technical Profile
+    <a href="/files/KadeMedley_TechnicalProfile_1Page.pdf" class="btn btn-primary" target="_blank" rel="noopener">
+      📋 Technical Profile
+      <span class="file-hint">PDF • 1 page</span>
     </a>
   </div>
 
@@ -63,6 +65,20 @@ CSS is included globally via extend_head.html
       <p>Clear communication with clients, documentation, and escalation management.</p>
     </div>
   </div>
+
+  {{/* Tools & Methods */}}
+  <div class="tools-section">
+    <h3 class="tools-title">Tools & Methods</h3>
+    <div class="tools-list">
+      <span class="tool-tag">Multimeter</span>
+      <span class="tool-tag">Electronics fault-finding</span>
+      <span class="tool-tag">Installation & commissioning</span>
+      <span class="tool-tag">Testing & verification</span>
+      <span class="tool-tag">Technical documentation</span>
+      <span class="tool-tag">Ticketing workflows</span>
+      <span class="tool-tag">Customer communication</span>
+    </div>
+  </div>
 </section>
 
 {{/* ========== RELEVANT EXPERIENCE ========== */}}
@@ -74,9 +90,9 @@ CSS is included globally via extend_head.html
       <h3>Field Service Technician</h3>
       <div class="company">ITW — Fabrication & Equipment Systems</div>
       <ul>
-        <li>Fault finding and diagnostics on fabrication equipment</li>
-        <li>Installation, commissioning, and customer training</li>
-        <li>Field repairs and preventive maintenance</li>
+        <li>Fault finding and diagnostics across multiple client sites</li>
+        <li>Installation, commissioning, and customer handover/training</li>
+        <li>Field repairs, preventive maintenance, and documentation</li>
       </ul>
     </div>
 
@@ -84,9 +100,9 @@ CSS is included globally via extend_head.html
       <h3>Technical Support Specialist</h3>
       <div class="company">SmartTech</div>
       <ul>
-        <li>Remote and on-site troubleshooting</li>
-        <li>Customer-facing support via phone, email, ticketing</li>
-        <li>Documentation and knowledge base contributions</li>
+        <li>Remote and on-site troubleshooting for enterprise clients</li>
+        <li>Customer-facing support via phone, email, and ticketing system</li>
+        <li>Documented solutions and contributed to internal knowledge base</li>
       </ul>
     </div>
 
@@ -94,8 +110,8 @@ CSS is included globally via extend_head.html
       <h3>Technical Support / Systems Technician</h3>
       <div class="company">CSE Crosscom — Motorola Solutions Partner</div>
       <ul>
-        <li>Communications systems installation and testing</li>
-        <li>Verification and commissioning documentation</li>
+        <li>Communications systems installation, testing, and verification</li>
+        <li>Commissioning documentation and customer sign-off</li>
         <li>Technical support for enterprise radio systems</li>
       </ul>
     </div>

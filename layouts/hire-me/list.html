@@ -20,12 +20,14 @@ CSS is included globally via extend_head.html
 
     {{/* Download Buttons */}}
     <div class="download-buttons">
-        {{/* TODO: PDFs not yet uploaded — update when ready */}}
-        <a href="/files/KadeMedley_CV_TechSupport_FieldService_PragueBrno.pdf" class="btn btn-primary" download>
-            📄 Download CV (PDF)
+        <a href="/files/KadeMedley_CV_TechSupport_FieldService_PragueBrno.pdf" class="btn btn-primary" target="_blank"
+            rel="noopener">
+            📄 Download CV
+            <span class="file-hint">PDF • 2 pages</span>
         </a>
-        <a href="/files/KadeMedley_TechnicalProfile_1Page.pdf" class="btn btn-primary" download>
-            📋 Download Technical Profile (PDF)
+        <a href="/files/KadeMedley_TechnicalProfile_1Page.pdf" class="btn btn-primary" target="_blank" rel="noopener">
+            📋 Technical Profile
+            <span class="file-hint">PDF • 1 page</span>
         </a>
     </div>
 
