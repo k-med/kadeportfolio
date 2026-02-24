@@ -1,0 +1,306 @@
+{{/*
+Multilingual Audio Conversion & Voice Adaptation — Offer Page
+Private page (not in nav) for Kiril to review scope & pricing.
+CSS is included globally via extend_head.html
+*/}}
+{{ define "main" }}
+
+<article class="services-page">
+
+    {{/* ========== HERO ========== */}}
+    <header class="services-hero">
+        <span class="services-badge">🎧 Audio Localization</span>
+        <h1>Multilingual Audio Conversion &amp; Voice Adaptation</h1>
+        <p class="services-intro">
+            Convert spoken content between Russian, French, and English — optimized for podcast,
+            YouTube voiceover, and audio-first platforms. One source, multiple languages.
+        </p>
+    </header>
+
+    {{/* ========== DUAL TRACKS ========== */}}
+    <section class="services-section">
+        <h2>Two Service Tracks</h2>
+        <p class="services-section-sub">Choose the track that matches your content goals:</p>
+
+        <div class="track-grid">
+
+            {{/* Track A — Audio Localization */}}
+            <div class="track-card track-card--primary">
+                <div class="track-label">Primary Service</div>
+                <h3>🎧 Audio Localization</h3>
+                <p class="track-desc">Full-pipeline audio conversion — from source speech to polished target-language
+                    audio file.</p>
+                <div class="track-workflow">
+                    <div class="track-step">
+                        <span class="track-step-icon">📝</span>
+                        <div>
+                            <strong>Transcription</strong>
+                            <span>Speech → accurate source-language text</span>
+                        </div>
+                    </div>
+                    <div class="track-step">
+                        <span class="track-step-icon">🌐</span>
+                        <div>
+                            <strong>Translation</strong>
+                            <span>Russian ↔ French ↔ English</span>
+                        </div>
+                    </div>
+                    <div class="track-step">
+                        <span class="track-step-icon">🔊</span>
+                        <div>
+                            <strong>Voice Generation</strong>
+                            <span>TTS or custom voice in the target language</span>
+                        </div>
+                    </div>
+                    <div class="track-step">
+                        <span class="track-step-icon">🎛️</span>
+                        <div>
+                            <strong>Audio Mastering</strong>
+                            <span>Leveling, cleanup, and export (MP3 / WAV)</span>
+                        </div>
+                    </div>
+                    <div class="track-step">
+                        <span class="track-step-icon">🔗</span>
+                        <div>
+                            <strong>Optional Video Sync</strong>
+                            <span>Align audio to original video timing</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {{/* Track B — Video Localization */}}
+            <div class="track-card">
+                <div class="track-label">Add-On Service</div>
+                <h3>🎬 Video Localization</h3>
+                <p class="track-desc">Subtitle and video-layer work — available as an expansion on top of audio
+                    conversion.</p>
+                <div class="track-workflow">
+                    <div class="track-step">
+                        <span class="track-step-icon">📁</span>
+                        <div>
+                            <strong>Subtitle Files</strong>
+                            <span>SRT / VTT with precise timecodes</span>
+                        </div>
+                    </div>
+                    <div class="track-step">
+                        <span class="track-step-icon">⏱️</span>
+                        <div>
+                            <strong>Subtitle Sync &amp; Cleanup</strong>
+                            <span>Timing, line breaks, readability polish</span>
+                        </div>
+                    </div>
+                    <div class="track-step">
+                        <span class="track-step-icon">🎬</span>
+                        <div>
+                            <strong>Burned-in Video</strong>
+                            <span>Subtitles baked into the video file</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    {{/* ========== CORE PRICING ========== */}}
+    <section class="services-section">
+        <h2>Pricing</h2>
+        <p class="services-section-sub">All-inclusive per-minute pricing. No hidden fees or fragmented add-ons.</p>
+
+        <div class="pricing-duo">
+
+            <div class="pricing-card pricing-card--featured">
+                <div class="pricing-card-header">
+                    <h3>🎧 Audio Conversion</h3>
+                    <span class="pricing-label">Core Package</span>
+                </div>
+                <div class="pricing-amount">$10<span>/min</span></div>
+                <ul class="pricing-features">
+                    <li>✔ Transcription</li>
+                    <li>✔ Full translation</li>
+                    <li>✔ Voice generation (TTS)</li>
+                    <li>✔ Audio mastering &amp; leveling</li>
+                    <li>✔ Clean audio file delivery</li>
+                </ul>
+                <div class="pricing-example">
+                    <span class="pricing-example-label">Example</span>
+                    10 min → <strong>$100</strong>
+                </div>
+            </div>
+
+            <div class="pricing-card">
+                <div class="pricing-card-header">
+                    <h3>🎬 Video Add-On</h3>
+                    <span class="pricing-label">On top of Audio Package</span>
+                </div>
+                <div class="pricing-amount">+$2<span>/min</span></div>
+                <ul class="pricing-features">
+                    <li>✔ SRT / VTT subtitle files</li>
+                    <li>✔ Subtitle sync to video</li>
+                    <li>✔ Optional burned-in video</li>
+                </ul>
+                <div class="pricing-example">
+                    <span class="pricing-example-label">Example</span>
+                    10 min → <strong>+$20</strong>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    {{/* ========== INTRO OFFER ========== */}}
+    <section class="services-section">
+        <div class="offer-callout">
+            <div class="offer-callout-badge">🏷️ Introductory Rate</div>
+            <h3>First 3–5 Projects — $9 per minute</h3>
+            <p>Lock in the collaborator rate for your first few projects. Standard rate of <strong>$10/min</strong>
+                applies after.</p>
+            <div class="offer-example">
+                <span class="offer-example-label">Example</span>
+                <span class="offer-example-calc">10 min audio → <strong>$90</strong></span>
+            </div>
+        </div>
+    </section>
+
+    {{/* ========== CONTENT REPURPOSING ========== */}}
+    <section class="services-section">
+        <h2>Content Repurposing</h2>
+        <div class="repurpose-card">
+            <h3>Multi-Language Channel Scaling</h3>
+            <p>Convert one video into multiple language channels with native audio. Instead of translating content,
+                you're <strong>scaling your reach</strong> — each language becomes a new distribution channel.</p>
+            <div class="repurpose-flow">
+                <span class="repurpose-step">1 Source Video</span>
+                <span class="repurpose-arrow">→</span>
+                <span class="repurpose-step">Russian Audio</span>
+                <span class="repurpose-step">English Audio</span>
+                <span class="repurpose-step">French Audio</span>
+            </div>
+        </div>
+    </section>
+
+    {{/* ========== CHANNEL MANAGEMENT ========== */}}
+    <section class="services-section">
+        <h2>Channel Management</h2>
+        <p class="services-section-sub">Uploading, publishing, and channel operations are separate from localization —
+            priced as flat fees.</p>
+
+        <div class="channel-grid">
+            <div class="channel-item">
+                <div class="channel-price">$25<span>/upload</span></div>
+                <strong>YouTube Upload &amp; Metadata</strong>
+                <span>Title, description, tags, thumbnail, and publish</span>
+            </div>
+            <div class="channel-item">
+                <div class="channel-price">$40–60<span> flat</span></div>
+                <strong>Multi-Platform Distribution</strong>
+                <span>Publish across YouTube, podcast feeds, and social</span>
+            </div>
+            <div class="channel-item">
+                <div class="channel-price">$200–400<span>/mo</span></div>
+                <strong>Monthly Channel Retainer</strong>
+                <span>Ongoing uploads, optimization, and management</span>
+            </div>
+        </div>
+    </section>
+
+    {{/* ========== DELIVERABLES ========== */}}
+    <section class="services-section">
+        <h2>Deliverables</h2>
+        <p class="services-section-sub">Every engagement produces clearly defined files:</p>
+        <div class="deliverables-list">
+            <div class="deliverable-tag">🔊 MP3 / WAV Audio File</div>
+            <div class="deliverable-tag">📝 TXT Transcript</div>
+            <div class="deliverable-tag">📄 SRT Subtitle File <em>(with video add-on)</em></div>
+            <div class="deliverable-tag">📄 VTT Subtitle File <em>(with video add-on)</em></div>
+            <div class="deliverable-tag">🎬 Burned-in Video <em>(with video add-on)</em></div>
+        </div>
+    </section>
+
+    {{/* ========== NOT INCLUDED ========== */}}
+    <section class="services-section">
+        <h2>What's Not Included</h2>
+        <p class="services-section-sub">For clear expectations, these are outside standard scope:</p>
+        <div class="boundary-list">
+            <div class="boundary-item">❌ Editing original video content</div>
+            <div class="boundary-item">❌ Script rewriting (unless specified)</div>
+            <div class="boundary-item">❌ Multilingual voice acting beyond TTS</div>
+            <div class="boundary-item">❌ Video uploads or publishing <em>(see Channel Management)</em></div>
+        </div>
+        <p class="boundary-note">Creative script adaptation (cultural edits) can be arranged separately at $10–$20 per
+            minute.</p>
+    </section>
+
+    {{/* ========== TURNAROUND ========== */}}
+    <section class="services-section">
+        <h2>Turnaround</h2>
+        <div class="turnaround-box">
+            <div class="turnaround-main">
+                <span class="turnaround-icon">📅</span>
+                <div>
+                    <strong>5–7 business days</strong> per piece
+                    <span class="turnaround-sub">Standard delivery timeline</span>
+                </div>
+            </div>
+            <div class="turnaround-express">
+                ⚡ <strong>Express delivery</strong> available for <strong>+20%</strong>
+            </div>
+        </div>
+    </section>
+
+    {{/* ========== QUICK SUMMARY TABLE ========== */}}
+    <section class="services-section">
+        <h2>Quick Summary</h2>
+        <div class="summary-table-wrap">
+            <table class="summary-table">
+                <thead>
+                    <tr>
+                        <th>Service</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="summary-highlight">
+                        <td><strong>Audio Conversion (core)</strong></td>
+                        <td><strong>$10 / min</strong></td>
+                    </tr>
+                    <tr>
+                        <td>Video / Subtitle add-on</td>
+                        <td>+$2 / min</td>
+                    </tr>
+                    <tr>
+                        <td>YouTube upload &amp; metadata</td>
+                        <td>$25 flat</td>
+                    </tr>
+                    <tr>
+                        <td>Multi-platform distribution</td>
+                        <td>$40–60 flat</td>
+                    </tr>
+                    <tr>
+                        <td>Monthly channel retainer</td>
+                        <td>$200–400 / mo</td>
+                    </tr>
+                    <tr class="summary-highlight">
+                        <td><strong>Intro rate (first 3–5 projects)</strong></td>
+                        <td><strong>$9 / min</strong></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    {{/* ========== CTA ========== */}}
+    <section class="services-section text-center">
+        <h2>Ready to Get Started?</h2>
+        <p class="services-section-sub">Let's start with one piece as a test — no long-term commitment required.</p>
+        <div class="hero-ctas" style="margin-top: 1.5rem;">
+            <a href="mailto:kade@kademedley.com" class="btn btn-primary">
+                ✉️ Get in Touch
+            </a>
+        </div>
+    </section>
+
+</article>
+
+{{ end }}

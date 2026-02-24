@@ -1,3 +1,3 @@
 User-agent: *
 Disallow:
-Sitemap: http://localhost:45943/sitemap.xml
+Sitemap: https://kademedley.com/sitemap.xml
