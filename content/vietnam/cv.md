@@ -171,7 +171,7 @@ layout: "cv"
   <h2>Languages</h2>
   <ul>
     <li><strong>English</strong>: Native (Australian)</li>
-    <li><strong>Vietnamese</strong>: A1 Foundation (currently learning)</li>
+    <li><strong>Vietnamese</strong>: A1 (Targeting A2 with private instruction)</li>
   </ul>
 </section>
 

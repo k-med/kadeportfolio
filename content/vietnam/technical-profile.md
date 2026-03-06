@@ -71,7 +71,7 @@ layout: "cv"
 
 <section class="cv-section cv-section-inline">
   <h2>Languages</h2>
-  <p><strong>English</strong>: Native &nbsp;|&nbsp; <strong>Vietnamese</strong>: A1 Foundation</p>
+  <p><strong>English</strong>: Native &nbsp;|&nbsp; <strong>Vietnamese</strong>: A1 (Targeting A2 with private instruction)</p>
 </section>
 
 </div>

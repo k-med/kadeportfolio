@@ -31,7 +31,7 @@ I'm seeking technical roles in Vietnam where I can apply diagnostic skills, fiel
 ## Languages
 
 - **English**: Native (Australian)
-- **Vietnamese**: A1 Foundation (currently learning)
+- **Vietnamese**: A1 (Targeting A2 with private instruction)
 
 ## Values
 
