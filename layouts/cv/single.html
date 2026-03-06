@@ -1,0 +1,19 @@
+{{/*
+CV / Technical Profile Layout
+Clean, printable layout optimized for browser Print-to-PDF.
+Hides navigation and footer in print mode via CSS.
+*/}}
+{{ define "main" }}
+
+<article class="cv-container">
+    {{ .Content }}
+
+    <div class="cv-print-cta no-print">
+        <p>To save as PDF, use your browser's <strong>Print</strong> function (Ctrl+P / ⌘P) and select <strong>Save as
+                PDF</strong>.</p>
+        <button onclick="window.print()" class="btn btn-primary">🖨️ Print / Save as PDF</button>
+        <a href="/vietnam/" class="btn btn-secondary">← Back to Home</a>
+    </div>
+</article>
+
+{{ end }}

@@ -14,35 +14,37 @@ minify: true
 pagination:
   pagerSize: 10
 
-# Menu
+# Menu — Vietnam (primary)
 menu:
   main:
     - identifier: home
       name: Home
-      url: /
+      url: /vietnam/
       weight: 10
     - identifier: hire-me
       name: Hire Me
-      url: /hire-me/
+      url: /vietnam/hire-me/
       weight: 20
     - identifier: projects
       name: Projects
-      url: /projects/
+      url: /vietnam/projects/
       weight: 30
     - identifier: about
       name: About
-      url: /about/
+      url: /vietnam/about/
       weight: 40
     - identifier: contact
       name: Contact
-      url: /contact/
+      url: /vietnam/contact/
       weight: 50
+
+
 
 params:
   # Site metadata
   env: production
   author: Kade Medley
-  description: "English-first Technical Support & Field Service professional seeking roles in Prague/Brno. Customer-facing troubleshooting, installation, commissioning, and diagnostics."
+  description: "English-first Technical Support & Field Service professional for Vietnam. Customer-facing troubleshooting, installation, commissioning support, and technical liaison."
   keywords:
     - technical support
     - field service
@@ -50,9 +52,10 @@ params:
     - diagnostics
     - installation
     - commissioning
-    - Prague
-    - Brno
+    - calibration
+    - Vietnam
     - English speaker
+    - technical liaison
 
   # Theme settings
   defaultTheme: auto
@@ -72,11 +75,11 @@ params:
 
   # Home page info mode
   homeInfoParams:
-    Title: "English-first Technical Support / Field Service — Prague/Brno"
+    Title: "English-first Technical Support / Field Service — Vietnam"
     Content: |
-      Customer-facing troubleshooting, installation & commissioning support, electronics & equipment systems.
+      Customer-facing troubleshooting, installation & commissioning support, technical documentation, and practical systems support for Vietnam-based employers.
 
-      **Non-EU citizen** — will require Employment Card sponsorship. Ready to proceed quickly with documentation.
+      **Australian national** — employer-sponsored Vietnam work authorization pathway ready. Documentation prepared.
 
   # Social icons (shown on home)
   socialIcons:
@@ -84,9 +87,6 @@ params:
       url: "mailto:kade@kademedley.com"
     - name: linkedin
       url: "https://www.linkedin.com/in/kademedley/"
-    # TODO: Add Calendly link here when ready
-    # - name: calendar
-    #   url: "https://calendly.com/kademedley"
 
   # Cover image defaults
   cover:
@@ -97,10 +97,6 @@ params:
   # SEO / OpenGraph
   assets:
     favicon: "/favicon.svg"
-    # TODO: Add PNG favicons when ready for better compatibility
-    # favicon16x16: "/favicon-16x16.png"
-    # favicon32x32: "/favicon-32x32.png"
-    # apple_touch_icon: "/apple-touch-icon.png"
     disableFingerprinting: false
 
   # OpenGraph / Twitter cards
@@ -110,7 +106,6 @@ params:
   # Label (site branding)
   label:
     text: "Kade Medley"
-    # icon: /favicon.ico
     iconHeight: 35
 
 # Outputs
