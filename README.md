@@ -49,3 +49,5 @@ Build Output Directory: `public`
 ## Contact
 
 You can reach Kade Medley through the [Contact](https://kademedley.com/vietnam/contact/) page on the site, or via [LinkedIn](https://www.linkedin.com/in/kademedley/).
+
+.
